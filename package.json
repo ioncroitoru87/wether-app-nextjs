@@ -1,6 +1,6 @@
 {
   "homepage": "http://ioncroitoru87.github.io/wether-app-nextjs",
-  "name": "portfolio-app",
+  "name": "wether-app-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,11 +8,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm next build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^0.27.2",
+
     "next": "12.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
