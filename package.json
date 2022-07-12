@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ioncroitoru87.github.io/wether-app-nextjs",
   "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
@@ -6,12 +7,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm next build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/node": "18.0.0",
@@ -19,6 +24,12 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "typescript": "4.7.4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }
